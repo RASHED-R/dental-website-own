@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>E-commerce Landing Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="product-image.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Description of the product goes here.</p>
+            <p class="price">$99.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <!-- Add more product sections as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your E-commerce Store</p>
+    </footer>
+
+    <script>// JavaScript code to handle user interactions goes here
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Add your code to handle adding the product to the cart
+                    alert('Product added to the cart!');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
