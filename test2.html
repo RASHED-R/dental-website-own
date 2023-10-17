@@ -1,107 +1,617 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
+<!-- Mirrored from templates.Rashed.com/dolt/default/testimonials.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Oct 2023 05:49:31 GMT -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <title>E-commerce Landing Page</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        header {
-            background: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/flaticon_dolt.css">
+    <link rel="stylesheet" href="assets/css/swiper.bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/dark-theme.css">
 
-        nav ul {
-            list-style: none;
-        }
-
-        nav li {
-            display: inline;
-            margin: 10px;
-        }
-
-        main {
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .product {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
-        }
-
-        .price {
-            font-weight: bold;
-        }
-
-        .add-to-cart {
-            background: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <title>Dolt - Medical Health & Dental Care HTML Template</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+
+    <!--  Preloader Start -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--  Preloader End -->
+
+    <!-- Theme Switcher Start -->
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Theme Switcher End -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area style-one" id="navbar">
+        <div class="header-top md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="contact-info list-style">
+                            <li>
+                                <p><i class="flaticon-mail"></i> reyadasraf07@gmail.com</p>
+                            </li>
+                            <li><i class="flaticon-pin"></i>Insaf Baraka kidney and General Hospital</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="contact-info text-lg-end list-style">
+                            <li><i class="flaticon-clock"></i>sat - thus: 09:00 am to 10.00 pm, Friday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo-light" src="assets/img/logo.webp" alt="logo">
+                    <img class="logo-dark" src="assets/img/logo-white.webp" alt="logo">
+                </a>
+                <div class="other-option d-flex align-items-center justify-content-end d-lg-none">
+                    <!-- <button type="button" class="search-btn d-lg-none" data-bs-toggle="modal"
+                        data-bs-target="#searchModal">
+                        <i class="flaticon-search"></i>
+                    </button> -->
+                    <div class="option-item">
+                        <a href="book-appointment.html" class="book-appointment">
+                            <span class=" blink">Appointment</span>
+                        </a>
+                    </div>
+                    <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
+                        aria-controls="navbarOffcanvas">
+                        <span class="burger-menu">
+                            <span class="top-bar"></span>
+                            <span class="middle-bar"></span>
+                            <span class="bottom-bar"></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="about.html" class="dropdown-toggle nav-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Dentists
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="dentists.html" class="nav-link">
+                                        All Dentists
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="dentist-details.html" class="nav-link">
+                                        Dentist Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service-style-two.html" class="dropdown-toggle nav-link">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="blog-no-sidebar.html" class="dropdown-toggle nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                            <a href="book-appointment.html" class="book-appointment">
+                                <span class=" blink">Book Appointment</span>
+                            </a>
+                        </div>
+                        <div class="option-item">
+                            <a class="sidebar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
+                                aria-controls="navbarOffcanvas">
+                                <i class="flaticon-list"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Start Responsive Navbar Area -->
+    <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+            <a href="index-2.html" class="logo d-inline-block">
+                <img class="logo-light" src="assets/img/logo.webp" alt="logo">
+                <img class="logo-dark" src="assets/img/logo-white.webp" alt="logo">
+            </a>
+            <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="navbarAccordion">
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="dentists.html" class="accordion-link">
+                        All Dentists
+                    </a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="service-style-two.html" class="accordion-link">
+                        Service
+                    </a>
+                </div>
+
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="blog-no-sidebar.html">
+                        Blog
+                    </a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="contact.html">
+                        Contact Us
+                    </a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="book-appointment.html" class="accordion-link">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+            <div class="offcanvas-contact-info">
+                <h4>Contact Info</h4>
+                <ul class="contact-info list-style">
+                    <li>
+                        <i class="flaticon-pin"></i>
+                        <p>No. 12, Ribon Building, Walse street, Australia</p>
+                    </li>
+                    <li>
+                        <i class="flaticon-mail"></i>
+                        <a
+                            href="https://templates.Rashed.com/cdn-cgi/l/email-protection#573f323b3b381733383b237934383a"><span
+                                class="__cf_email__"
+                                data-cfemail="0f676a6363604f6b60637b216c6062">[email&#160;protected]</span></a>
+                    </li>
+                    <li>
+                        <i class="flaticon-phone-call"></i>
+                        <a href="tel:968547856254">+8801726187603</a>
+                    </li>
+                </ul>
+                <ul class="social-profile list-style">
+                    <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="others-option d-lg-none">
+                <div class="contact-item">
+                    <i class="flaticon-emergency-call"></i>
+                    <span>Phone Number</span>
+                    <a href="tel:968547856254">+8801726187603</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Search Modal -->
+    <div class="modal fade searchModal" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here....">
+                    <button type="submit"><i class="ri-search-line"></i></button>
+                </form>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="ri-close-fill"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- End Search Modal -->
+
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap bg-f br-8">
+        <img src="assets/img/breadcrumb/br-shape-1.webp" alt="Image" class="br-shape-one bounce sm-none">
+        <img src="assets/img/breadcrumb/br-shape-2.webp" alt="Image" class="br-shape-two moveHorizontal sm-none">
+        <img src="assets/img/breadcrumb/br-shape-3.webp" alt="Image" class="br-shape-three">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <h2>Testimonials</h2>
+                <ul class="breadcrumb-menu list-style">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li>Testimonials</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Testimonials Section Start -->
+    <div class="testimonials-wrap ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-1.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Lincoln Thomas</h5>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-2.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Autumn Leilani</h5>
+                                <span>Enterprenaur</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-3.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Joshua Nathan</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-4.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Emily Gianna</h5>
+                                <span>Enterprenaur</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-5.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Elijah James</h5>
+                                <span>Businessman</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-6.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Elizabeth Ella</h5>
+                                <span>Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-7.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Noah William</h5>
+                                <span>Musician</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-8.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Avery Eleanor</h5>
+                                <span>Teacher</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="testimonial-card style-three">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-9.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Liam Benjamin</h5>
+                                <span>Web Designer</span>
+                            </div>
+                        </div>
+                        <div class="client-quote">
+                            <span class="quote-icon">
+                                <i class="flaticon-quote"></i>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consec tetur iusmod tempor incididunt uto labore etd lorem
+                                ipsum dolor ading.</p>
+                            <ul class="rating list-style">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="page-nav list-style text-center mt-30">
+                <li><a href="testimonials-one.html"><img src="assets/img/left-arrow-2.svg" alt="Image"></a></li>
+                <li><a class="active" href="testimonials-one.html">01</a></li>
+                <li><a href="testimonials-one.html">02</a></li>
+                <li><a href="testimonials-one.html">03</a></li>
+                <li><a href="testimonials-one.html"><img src="assets/img/right-arrow-2.svg" alt="Image"></a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+    <!-- FAQ Section End -->
 
-    <main>
-        <section class="product">
-            <img src="product-image.jpg" alt="Product Image">
-            <h2>Product Name</h2>
-            <p>Description of the product goes here.</p>
-            <p class="price">$99.99</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </section>
+    <!-- Footer  Start -->
+    <footer class="footer-wrap style-one">
+        <div class="footer-top pb-70">
+            <img src="assets/img/footer-shape.webp" alt="Image" class="footer-shape">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-12 col-sm-6">
+                        <div class="footer-widget">
+                            <a href="index-2.html" class="footer-logo">
+                                <img class="logo-light" src="assets/img/logo-white.webp" alt="Image">
+                                <img class="logo-dark" src="assets/img/logo-white.webp" alt="Image">
+                            </a>
+                            <p class="comp-desc">There are many variations of passages ofor
+                                Ipsum available, but the majority have suffered
+                                alteration in some form by inject.</p>
+                            <div class="contact-info">
+                                <h6><i class="flaticon-pin"></i>Contact Address</h6>
+                                <p>Insaf Baraka kidney and General Hospital, Moghbazar, Dhaka</p>
+                            </div>
+                            <ul class="social-profile list-style">
+                                <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                                </li>
+                                <li><a href="https://www.twitter.com/" target="_blank"><i
+                                            class="ri-twitter-fill"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i
+                                            class="ri-instagram-line"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                            class="ri-linkedin-fill"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-sm-6 pe-xxl-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Quick Links</h3>
+                            <ul class="footer-menu list-style">
+                                <li><a href="index.html"><i class="ri-arrow-right-double-line"></i>Home</a></li>
+                                <li><a href="about.html"><i class="ri-arrow-right-double-line"></i>About Us</a></li>
+                                <li><a href="dentists.html"><i class="ri-arrow-right-double-line"></i>Dentist</a></li>
+                                <li><a href="dentist-details.html"><i class="ri-arrow-right-double-line"></i>Dentist
+                                        Details</a></li>
+                                <li><a href="service-style-two.html"><i
+                                            class="ri-arrow-right-double-line"></i>Services</a></li>
+                                <li><a href="service-details.html"><i class="ri-arrow-right-double-line"></i>Service
+                                        Details</a></li>
+                                <li><a href="contact.html"><i class="ri-arrow-right-double-line"></i>Contact Us</a></li>
+                                <li><a href="book-appointment-2.html"><i class="ri-arrow-right-double-line"></i>Make An
+                                        Appointment</a></li>
 
-        <!-- Add more product sections as needed -->
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Your E-commerce Store</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-6 px-xxl-0">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Clinic Hours</h3>
+                            <ul class="opening-time list-style">
+                                <li><span>Sat - Thu</span> <span>10:00 AM - 10:00 PM</span></li>
+                                <li><span>Friday </span> <span>10:00 AM - 10:00 PM</span></li>
+                            </ul>
+                            <div class="contact-info">
+                                <h6><i class="flaticon-phone-call"></i>Call Us</h6>
+                                <a href="tel:08811234567899">(+88) 0172-6187603</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-text"><i class="ri-copyright-line"></i><span>Dr Reyad Dental Perfection</span> is proudly
+            owned by <a href="https://Rashed.com/">Rashed</a></p>
     </footer>
+    <!-- Footer End -->
 
-    <script>// JavaScript code to handle user interactions goes here
-        document.addEventListener('DOMContentLoaded', function () {
-            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    <!-- Back to Top -->
+    <button type="button" id="backtotop" class="position-fixed text-center border-0 p-0">
+        <i class="ri-arrow-up-line"></i>
+    </button>
 
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Add your code to handle adding the product to the cart
-                    alert('Product added to the cart!');
-                });
-            });
-        });
-    </script>
+    <!-- Link of JS files -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
+<!-- Mirrored from templates.Rashed.com/dolt/default/testimonials.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Oct 2023 05:49:32 GMT -->
 
 </html>
